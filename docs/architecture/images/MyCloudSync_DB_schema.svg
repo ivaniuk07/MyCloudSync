@@ -1,0 +1,233 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1620" height="860" viewBox="0 0 1620 860" font-family="Inter, Segoe UI, Arial, sans-serif">
+<rect width="1620" height="860" fill="#f3f4f6"/>
+<text x="40" y="36" font-size="20" font-weight="700" fill="#24292f">MyCloudSync — схема локальної бази даних (SQLite)</text>
+<path d="M370,110.0 H405.0 V138.0 H440" fill="none" stroke="#8c959f" stroke-width="1.5"/><line x1="378" y1="103.0" x2="378" y2="117.0" stroke="#8c959f" stroke-width="1.5"/><line x1="440" y1="131.0" x2="428" y2="138.0" stroke="#8c959f" stroke-width="1.5"/><line x1="440" y1="145.0" x2="428" y2="138.0" stroke="#8c959f" stroke-width="1.5"/>
+<path d="M770,110.0 H795 V138.0 H840" fill="none" stroke="#8c959f" stroke-width="1.5"/><line x1="778" y1="103.0" x2="778" y2="117.0" stroke="#8c959f" stroke-width="1.5"/><line x1="840" y1="131.0" x2="828" y2="138.0" stroke="#8c959f" stroke-width="1.5"/><line x1="840" y1="145.0" x2="828" y2="138.0" stroke="#8c959f" stroke-width="1.5"/>
+<path d="M770,110.0 H795 V578.0 H840" fill="none" stroke="#8c959f" stroke-width="1.5"/><line x1="778" y1="103.0" x2="778" y2="117.0" stroke="#8c959f" stroke-width="1.5"/><line x1="840" y1="571.0" x2="828" y2="578.0" stroke="#8c959f" stroke-width="1.5"/><line x1="840" y1="585.0" x2="828" y2="578.0" stroke="#8c959f" stroke-width="1.5"/>
+<path d="M440,110.0 H418 V548.0 H440" fill="none" stroke="#8c959f" stroke-width="1.5"/><line x1="432" y1="103.0" x2="432" y2="117.0" stroke="#8c959f" stroke-width="1.5"/><line x1="440" y1="541.0" x2="428" y2="548.0" stroke="#8c959f" stroke-width="1.5"/><line x1="440" y1="555.0" x2="428" y2="548.0" stroke="#8c959f" stroke-width="1.5"/>
+<path d="M1170,110.0 H1210 V138.0 H1250" fill="none" stroke="#8c959f" stroke-width="1.5"/><line x1="1178" y1="103.0" x2="1178" y2="117.0" stroke="#8c959f" stroke-width="1.5"/><line x1="1250" y1="131.0" x2="1238" y2="138.0" stroke="#8c959f" stroke-width="1.5"/><line x1="1250" y1="145.0" x2="1238" y2="138.0" stroke="#8c959f" stroke-width="1.5"/>
+<path d="M840,110.0 H822 V606.0 H840" fill="none" stroke="#8c959f" stroke-width="1.5"/><line x1="832" y1="103.0" x2="832" y2="117.0" stroke="#8c959f" stroke-width="1.5"/><line x1="840" y1="599.0" x2="828" y2="606.0" stroke="#8c959f" stroke-width="1.5"/><line x1="840" y1="613.0" x2="828" y2="606.0" stroke="#8c959f" stroke-width="1.5"/>
+<g id="Account">
+<rect x="40" y="60" width="330" height="232" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+<path d="M40,96 V66 a6,6 0 0 1 6,-6 H364 a6,6 0 0 1 6,6 V96 Z" fill="#2f5f8f"/>
+<text x="54" y="83" font-size="14" font-weight="700" fill="#fff">Account</text>
+<text x="54" y="114" font-size="13" fill="#24292f" font-weight="700">id</text>
+<text x="290" y="114" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">int</text>
+<rect x="300" y="102" width="22" height="16" rx="3" fill="#bf8700" fill-opacity="0.12"/><text x="311.0" y="114" font-size="10" font-weight="700" fill="#bf8700" text-anchor="middle">PK</text>
+<rect x="41" y="124" width="328" height="28" fill="#f6f8fa"/>
+<text x="54" y="142" font-size="13" fill="#24292f">email</text>
+<text x="290" y="142" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">varchar(100)</text>
+<rect x="300" y="130" width="22" height="16" rx="3" fill="#57606a" fill-opacity="0.12"/><text x="311.0" y="142" font-size="10" font-weight="700" fill="#57606a" text-anchor="middle">NN</text>
+<rect x="326" y="130" width="16" height="16" rx="3" fill="#8250df" fill-opacity="0.12"/><text x="334.0" y="142" font-size="10" font-weight="700" fill="#8250df" text-anchor="middle">U</text>
+<text x="54" y="170" font-size="13" fill="#24292f">display_name</text>
+<text x="290" y="170" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">varchar(100)</text>
+<rect x="41" y="180" width="328" height="28" fill="#f6f8fa"/>
+<text x="54" y="198" font-size="13" fill="#24292f">access_token</text>
+<text x="290" y="198" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">text</text>
+<rect x="300" y="186" width="22" height="16" rx="3" fill="#57606a" fill-opacity="0.12"/><text x="311.0" y="198" font-size="10" font-weight="700" fill="#57606a" text-anchor="middle">NN</text>
+<text x="54" y="226" font-size="13" fill="#24292f">refresh_token</text>
+<text x="290" y="226" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">text</text>
+<rect x="300" y="214" width="22" height="16" rx="3" fill="#57606a" fill-opacity="0.12"/><text x="311.0" y="226" font-size="10" font-weight="700" fill="#57606a" text-anchor="middle">NN</text>
+<rect x="41" y="236" width="328" height="28" fill="#f6f8fa"/>
+<text x="54" y="254" font-size="13" fill="#24292f">token_expires_at</text>
+<text x="290" y="254" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">datetime</text>
+<text x="54" y="282" font-size="13" fill="#24292f">created_at</text>
+<text x="290" y="282" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">datetime</text>
+<rect x="300" y="270" width="22" height="16" rx="3" fill="#57606a" fill-opacity="0.12"/><text x="311.0" y="282" font-size="10" font-weight="700" fill="#57606a" text-anchor="middle">NN</text>
+</g>
+<g id="AppSettings">
+<rect x="40" y="420" width="330" height="204" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+<path d="M40,456 V426 a6,6 0 0 1 6,-6 H364 a6,6 0 0 1 6,6 V456 Z" fill="#2f5f8f"/>
+<text x="54" y="443" font-size="14" font-weight="700" fill="#fff">AppSettings</text>
+<text x="54" y="474" font-size="13" fill="#24292f" font-weight="700">id</text>
+<text x="290" y="474" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">int</text>
+<rect x="300" y="462" width="22" height="16" rx="3" fill="#bf8700" fill-opacity="0.12"/><text x="311.0" y="474" font-size="10" font-weight="700" fill="#bf8700" text-anchor="middle">PK</text>
+<rect x="41" y="484" width="328" height="28" fill="#f6f8fa"/>
+<text x="54" y="502" font-size="13" fill="#24292f">check_interval_sec</text>
+<text x="290" y="502" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">int</text>
+<rect x="300" y="490" width="22" height="16" rx="3" fill="#57606a" fill-opacity="0.12"/><text x="311.0" y="502" font-size="10" font-weight="700" fill="#57606a" text-anchor="middle">NN</text>
+<text x="54" y="530" font-size="13" fill="#24292f">autostart</text>
+<text x="290" y="530" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">bool</text>
+<rect x="300" y="518" width="22" height="16" rx="3" fill="#57606a" fill-opacity="0.12"/><text x="311.0" y="530" font-size="10" font-weight="700" fill="#57606a" text-anchor="middle">NN</text>
+<rect x="41" y="540" width="328" height="28" fill="#f6f8fa"/>
+<text x="54" y="558" font-size="13" fill="#24292f">start_minimized</text>
+<text x="290" y="558" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">bool</text>
+<rect x="300" y="546" width="22" height="16" rx="3" fill="#57606a" fill-opacity="0.12"/><text x="311.0" y="558" font-size="10" font-weight="700" fill="#57606a" text-anchor="middle">NN</text>
+<text x="54" y="586" font-size="13" fill="#24292f">show_notifications</text>
+<text x="290" y="586" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">bool</text>
+<rect x="300" y="574" width="22" height="16" rx="3" fill="#57606a" fill-opacity="0.12"/><text x="311.0" y="586" font-size="10" font-weight="700" fill="#57606a" text-anchor="middle">NN</text>
+<rect x="41" y="596" width="328" height="28" fill="#f6f8fa"/>
+<text x="54" y="614" font-size="13" fill="#24292f">language</text>
+<text x="290" y="614" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">varchar(10)</text>
+</g>
+<g id="SyncPair">
+<rect x="440" y="60" width="330" height="316" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+<path d="M440,96 V66 a6,6 0 0 1 6,-6 H764 a6,6 0 0 1 6,6 V96 Z" fill="#2f5f8f"/>
+<text x="454" y="83" font-size="14" font-weight="700" fill="#fff">SyncPair</text>
+<text x="454" y="114" font-size="13" fill="#24292f" font-weight="700">id</text>
+<text x="690" y="114" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">int</text>
+<rect x="700" y="102" width="22" height="16" rx="3" fill="#bf8700" fill-opacity="0.12"/><text x="711.0" y="114" font-size="10" font-weight="700" fill="#bf8700" text-anchor="middle">PK</text>
+<rect x="441" y="124" width="328" height="28" fill="#f6f8fa"/>
+<text x="454" y="142" font-size="13" fill="#24292f">account_id</text>
+<text x="690" y="142" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">int</text>
+<rect x="700" y="130" width="22" height="16" rx="3" fill="#0969da" fill-opacity="0.12"/><text x="711.0" y="142" font-size="10" font-weight="700" fill="#0969da" text-anchor="middle">FK</text>
+<rect x="726" y="130" width="22" height="16" rx="3" fill="#57606a" fill-opacity="0.12"/><text x="737.0" y="142" font-size="10" font-weight="700" fill="#57606a" text-anchor="middle">NN</text>
+<text x="454" y="170" font-size="13" fill="#24292f">local_path</text>
+<text x="690" y="170" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">varchar(260)</text>
+<rect x="700" y="158" width="22" height="16" rx="3" fill="#57606a" fill-opacity="0.12"/><text x="711.0" y="170" font-size="10" font-weight="700" fill="#57606a" text-anchor="middle">NN</text>
+<rect x="441" y="180" width="328" height="28" fill="#f6f8fa"/>
+<text x="454" y="198" font-size="13" fill="#24292f">drive_folder_id</text>
+<text x="690" y="198" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">varchar(100)</text>
+<rect x="700" y="186" width="22" height="16" rx="3" fill="#57606a" fill-opacity="0.12"/><text x="711.0" y="198" font-size="10" font-weight="700" fill="#57606a" text-anchor="middle">NN</text>
+<text x="454" y="226" font-size="13" fill="#24292f">drive_folder_name</text>
+<text x="690" y="226" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">varchar(255)</text>
+<rect x="441" y="236" width="328" height="28" fill="#f6f8fa"/>
+<text x="454" y="254" font-size="13" fill="#24292f">sync_mode</text>
+<text x="690" y="254" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">varchar(20)</text>
+<rect x="700" y="242" width="22" height="16" rx="3" fill="#57606a" fill-opacity="0.12"/><text x="711.0" y="254" font-size="10" font-weight="700" fill="#57606a" text-anchor="middle">NN</text>
+<text x="454" y="282" font-size="13" fill="#24292f">is_active</text>
+<text x="690" y="282" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">bool</text>
+<rect x="700" y="270" width="22" height="16" rx="3" fill="#57606a" fill-opacity="0.12"/><text x="711.0" y="282" font-size="10" font-weight="700" fill="#57606a" text-anchor="middle">NN</text>
+<rect x="441" y="292" width="328" height="28" fill="#f6f8fa"/>
+<text x="454" y="310" font-size="13" fill="#24292f">page_token</text>
+<text x="690" y="310" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">varchar(255)</text>
+<text x="454" y="338" font-size="13" fill="#24292f">last_sync_at</text>
+<text x="690" y="338" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">datetime</text>
+<rect x="441" y="348" width="328" height="28" fill="#f6f8fa"/>
+<text x="454" y="366" font-size="13" fill="#24292f">created_at</text>
+<text x="690" y="366" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">datetime</text>
+<rect x="700" y="354" width="22" height="16" rx="3" fill="#57606a" fill-opacity="0.12"/><text x="711.0" y="366" font-size="10" font-weight="700" fill="#57606a" text-anchor="middle">NN</text>
+</g>
+<g id="ExcludeRule">
+<rect x="440" y="470" width="330" height="148" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+<path d="M440,506 V476 a6,6 0 0 1 6,-6 H764 a6,6 0 0 1 6,6 V506 Z" fill="#2f5f8f"/>
+<text x="454" y="493" font-size="14" font-weight="700" fill="#fff">ExcludeRule</text>
+<text x="454" y="524" font-size="13" fill="#24292f" font-weight="700">id</text>
+<text x="690" y="524" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">int</text>
+<rect x="700" y="512" width="22" height="16" rx="3" fill="#bf8700" fill-opacity="0.12"/><text x="711.0" y="524" font-size="10" font-weight="700" fill="#bf8700" text-anchor="middle">PK</text>
+<rect x="441" y="534" width="328" height="28" fill="#f6f8fa"/>
+<text x="454" y="552" font-size="13" fill="#24292f">sync_pair_id</text>
+<text x="690" y="552" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">int</text>
+<rect x="700" y="540" width="22" height="16" rx="3" fill="#0969da" fill-opacity="0.12"/><text x="711.0" y="552" font-size="10" font-weight="700" fill="#0969da" text-anchor="middle">FK</text>
+<rect x="726" y="540" width="22" height="16" rx="3" fill="#57606a" fill-opacity="0.12"/><text x="737.0" y="552" font-size="10" font-weight="700" fill="#57606a" text-anchor="middle">NN</text>
+<text x="454" y="580" font-size="13" fill="#24292f">pattern</text>
+<text x="690" y="580" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">varchar(100)</text>
+<rect x="700" y="568" width="22" height="16" rx="3" fill="#57606a" fill-opacity="0.12"/><text x="711.0" y="580" font-size="10" font-weight="700" fill="#57606a" text-anchor="middle">NN</text>
+<rect x="441" y="590" width="328" height="28" fill="#f6f8fa"/>
+<text x="454" y="608" font-size="13" fill="#24292f">is_enabled</text>
+<text x="690" y="608" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">bool</text>
+<rect x="700" y="596" width="22" height="16" rx="3" fill="#57606a" fill-opacity="0.12"/><text x="711.0" y="608" font-size="10" font-weight="700" fill="#57606a" text-anchor="middle">NN</text>
+</g>
+<g id="FileState">
+<rect x="840" y="60" width="330" height="372" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+<path d="M840,96 V66 a6,6 0 0 1 6,-6 H1164 a6,6 0 0 1 6,6 V96 Z" fill="#2f5f8f"/>
+<text x="854" y="83" font-size="14" font-weight="700" fill="#fff">FileState</text>
+<text x="854" y="114" font-size="13" fill="#24292f" font-weight="700">id</text>
+<text x="1090" y="114" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">int</text>
+<rect x="1100" y="102" width="22" height="16" rx="3" fill="#bf8700" fill-opacity="0.12"/><text x="1111.0" y="114" font-size="10" font-weight="700" fill="#bf8700" text-anchor="middle">PK</text>
+<rect x="841" y="124" width="328" height="28" fill="#f6f8fa"/>
+<text x="854" y="142" font-size="13" fill="#24292f">sync_pair_id</text>
+<text x="1090" y="142" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">int</text>
+<rect x="1100" y="130" width="22" height="16" rx="3" fill="#0969da" fill-opacity="0.12"/><text x="1111.0" y="142" font-size="10" font-weight="700" fill="#0969da" text-anchor="middle">FK</text>
+<rect x="1126" y="130" width="22" height="16" rx="3" fill="#57606a" fill-opacity="0.12"/><text x="1137.0" y="142" font-size="10" font-weight="700" fill="#57606a" text-anchor="middle">NN</text>
+<text x="854" y="170" font-size="13" fill="#24292f">relative_path</text>
+<text x="1090" y="170" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">varchar(500)</text>
+<rect x="1100" y="158" width="22" height="16" rx="3" fill="#57606a" fill-opacity="0.12"/><text x="1111.0" y="170" font-size="10" font-weight="700" fill="#57606a" text-anchor="middle">NN</text>
+<rect x="841" y="180" width="328" height="28" fill="#f6f8fa"/>
+<text x="854" y="198" font-size="13" fill="#24292f">drive_file_id</text>
+<text x="1090" y="198" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">varchar(100)</text>
+<rect x="1100" y="186" width="16" height="16" rx="3" fill="#8250df" fill-opacity="0.12"/><text x="1108.0" y="198" font-size="10" font-weight="700" fill="#8250df" text-anchor="middle">U</text>
+<text x="854" y="226" font-size="13" fill="#24292f">is_folder</text>
+<text x="1090" y="226" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">bool</text>
+<rect x="1100" y="214" width="22" height="16" rx="3" fill="#57606a" fill-opacity="0.12"/><text x="1111.0" y="226" font-size="10" font-weight="700" fill="#57606a" text-anchor="middle">NN</text>
+<rect x="841" y="236" width="328" height="28" fill="#f6f8fa"/>
+<text x="854" y="254" font-size="13" fill="#24292f">size_bytes</text>
+<text x="1090" y="254" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">bigint</text>
+<text x="854" y="282" font-size="13" fill="#24292f">local_hash</text>
+<text x="1090" y="282" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">varchar(32)</text>
+<rect x="841" y="292" width="328" height="28" fill="#f6f8fa"/>
+<text x="854" y="310" font-size="13" fill="#24292f">drive_md5</text>
+<text x="1090" y="310" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">varchar(32)</text>
+<text x="854" y="338" font-size="13" fill="#24292f">local_modified_at</text>
+<text x="1090" y="338" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">datetime</text>
+<rect x="841" y="348" width="328" height="28" fill="#f6f8fa"/>
+<text x="854" y="366" font-size="13" fill="#24292f">drive_modified_at</text>
+<text x="1090" y="366" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">datetime</text>
+<text x="854" y="394" font-size="13" fill="#24292f">last_synced_at</text>
+<text x="1090" y="394" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">datetime</text>
+<rect x="841" y="404" width="328" height="28" fill="#f6f8fa"/>
+<text x="854" y="422" font-size="13" fill="#24292f">status</text>
+<text x="1090" y="422" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">varchar(20)</text>
+<rect x="1100" y="410" width="22" height="16" rx="3" fill="#57606a" fill-opacity="0.12"/><text x="1111.0" y="422" font-size="10" font-weight="700" fill="#57606a" text-anchor="middle">NN</text>
+</g>
+<g id="Conflict">
+<rect x="1250" y="60" width="330" height="232" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+<path d="M1250,96 V66 a6,6 0 0 1 6,-6 H1574 a6,6 0 0 1 6,6 V96 Z" fill="#2f5f8f"/>
+<text x="1264" y="83" font-size="14" font-weight="700" fill="#fff">Conflict</text>
+<text x="1264" y="114" font-size="13" fill="#24292f" font-weight="700">id</text>
+<text x="1500" y="114" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">int</text>
+<rect x="1510" y="102" width="22" height="16" rx="3" fill="#bf8700" fill-opacity="0.12"/><text x="1521.0" y="114" font-size="10" font-weight="700" fill="#bf8700" text-anchor="middle">PK</text>
+<rect x="1251" y="124" width="328" height="28" fill="#f6f8fa"/>
+<text x="1264" y="142" font-size="13" fill="#24292f">file_state_id</text>
+<text x="1500" y="142" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">int</text>
+<rect x="1510" y="130" width="22" height="16" rx="3" fill="#0969da" fill-opacity="0.12"/><text x="1521.0" y="142" font-size="10" font-weight="700" fill="#0969da" text-anchor="middle">FK</text>
+<rect x="1536" y="130" width="22" height="16" rx="3" fill="#57606a" fill-opacity="0.12"/><text x="1547.0" y="142" font-size="10" font-weight="700" fill="#57606a" text-anchor="middle">NN</text>
+<text x="1264" y="170" font-size="13" fill="#24292f">conflict_copy_name</text>
+<text x="1500" y="170" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">varchar(255)</text>
+<rect x="1510" y="158" width="22" height="16" rx="3" fill="#57606a" fill-opacity="0.12"/><text x="1521.0" y="170" font-size="10" font-weight="700" fill="#57606a" text-anchor="middle">NN</text>
+<rect x="1251" y="180" width="328" height="28" fill="#f6f8fa"/>
+<text x="1264" y="198" font-size="13" fill="#24292f">local_modified_at</text>
+<text x="1500" y="198" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">datetime</text>
+<rect x="1510" y="186" width="22" height="16" rx="3" fill="#57606a" fill-opacity="0.12"/><text x="1521.0" y="198" font-size="10" font-weight="700" fill="#57606a" text-anchor="middle">NN</text>
+<text x="1264" y="226" font-size="13" fill="#24292f">drive_modified_at</text>
+<text x="1500" y="226" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">datetime</text>
+<rect x="1510" y="214" width="22" height="16" rx="3" fill="#57606a" fill-opacity="0.12"/><text x="1521.0" y="226" font-size="10" font-weight="700" fill="#57606a" text-anchor="middle">NN</text>
+<rect x="1251" y="236" width="328" height="28" fill="#f6f8fa"/>
+<text x="1264" y="254" font-size="13" fill="#24292f">detected_at</text>
+<text x="1500" y="254" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">datetime</text>
+<rect x="1510" y="242" width="22" height="16" rx="3" fill="#57606a" fill-opacity="0.12"/><text x="1521.0" y="254" font-size="10" font-weight="700" fill="#57606a" text-anchor="middle">NN</text>
+<text x="1264" y="282" font-size="13" fill="#24292f">is_resolved</text>
+<text x="1500" y="282" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">bool</text>
+<rect x="1510" y="270" width="22" height="16" rx="3" fill="#57606a" fill-opacity="0.12"/><text x="1521.0" y="282" font-size="10" font-weight="700" fill="#57606a" text-anchor="middle">NN</text>
+</g>
+<g id="SyncLog">
+<rect x="840" y="500" width="330" height="260" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+<path d="M840,536 V506 a6,6 0 0 1 6,-6 H1164 a6,6 0 0 1 6,6 V536 Z" fill="#2f5f8f"/>
+<text x="854" y="523" font-size="14" font-weight="700" fill="#fff">SyncLog</text>
+<text x="854" y="554" font-size="13" fill="#24292f" font-weight="700">id</text>
+<text x="1090" y="554" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">int</text>
+<rect x="1100" y="542" width="22" height="16" rx="3" fill="#bf8700" fill-opacity="0.12"/><text x="1111.0" y="554" font-size="10" font-weight="700" fill="#bf8700" text-anchor="middle">PK</text>
+<rect x="841" y="564" width="328" height="28" fill="#f6f8fa"/>
+<text x="854" y="582" font-size="13" fill="#24292f">sync_pair_id</text>
+<text x="1090" y="582" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">int</text>
+<rect x="1100" y="570" width="22" height="16" rx="3" fill="#0969da" fill-opacity="0.12"/><text x="1111.0" y="582" font-size="10" font-weight="700" fill="#0969da" text-anchor="middle">FK</text>
+<rect x="1126" y="570" width="22" height="16" rx="3" fill="#57606a" fill-opacity="0.12"/><text x="1137.0" y="582" font-size="10" font-weight="700" fill="#57606a" text-anchor="middle">NN</text>
+<text x="854" y="610" font-size="13" fill="#24292f">file_state_id</text>
+<text x="1090" y="610" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">int</text>
+<rect x="1100" y="598" width="22" height="16" rx="3" fill="#0969da" fill-opacity="0.12"/><text x="1111.0" y="610" font-size="10" font-weight="700" fill="#0969da" text-anchor="middle">FK</text>
+<rect x="841" y="620" width="328" height="28" fill="#f6f8fa"/>
+<text x="854" y="638" font-size="13" fill="#24292f">action</text>
+<text x="1090" y="638" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">varchar(20)</text>
+<rect x="1100" y="626" width="22" height="16" rx="3" fill="#57606a" fill-opacity="0.12"/><text x="1111.0" y="638" font-size="10" font-weight="700" fill="#57606a" text-anchor="middle">NN</text>
+<text x="854" y="666" font-size="13" fill="#24292f">direction</text>
+<text x="1090" y="666" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">varchar(10)</text>
+<rect x="841" y="676" width="328" height="28" fill="#f6f8fa"/>
+<text x="854" y="694" font-size="13" fill="#24292f">result</text>
+<text x="1090" y="694" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">varchar(20)</text>
+<rect x="1100" y="682" width="22" height="16" rx="3" fill="#57606a" fill-opacity="0.12"/><text x="1111.0" y="694" font-size="10" font-weight="700" fill="#57606a" text-anchor="middle">NN</text>
+<text x="854" y="722" font-size="13" fill="#24292f">message</text>
+<text x="1090" y="722" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">text</text>
+<rect x="841" y="732" width="328" height="28" fill="#f6f8fa"/>
+<text x="854" y="750" font-size="13" fill="#24292f">created_at</text>
+<text x="1090" y="750" font-size="12" fill="#6e7781" text-anchor="end" font-family="Consolas, monospace">datetime</text>
+<rect x="1100" y="738" width="22" height="16" rx="3" fill="#57606a" fill-opacity="0.12"/><text x="1111.0" y="750" font-size="10" font-weight="700" fill="#57606a" text-anchor="middle">NN</text>
+</g>
+<g id="Legend"><rect x="40" y="660" width="330" height="150" rx="6" fill="#fff" stroke="#d0d7de"/>
+<text x="54" y="684" font-size="13" font-weight="700" fill="#24292f">Позначення</text>
+<rect x="54" y="700" width="22" height="16" rx="3" fill="#bf8700" fill-opacity="0.12"/><text x="65" y="712" font-size="10" font-weight="700" fill="#bf8700" text-anchor="middle">PK</text><text x="86" y="712" font-size="12" fill="#24292f">первинний ключ</text>
+<rect x="54" y="722" width="22" height="16" rx="3" fill="#0969da" fill-opacity="0.12"/><text x="65" y="734" font-size="10" font-weight="700" fill="#0969da" text-anchor="middle">FK</text><text x="86" y="734" font-size="12" fill="#24292f">зовнішній ключ</text>
+<rect x="54" y="744" width="22" height="16" rx="3" fill="#57606a" fill-opacity="0.12"/><text x="65" y="756" font-size="10" font-weight="700" fill="#57606a" text-anchor="middle">NN</text><text x="86" y="756" font-size="12" fill="#24292f">NOT NULL (обов’язкове)</text>
+<rect x="54" y="766" width="22" height="16" rx="3" fill="#8250df" fill-opacity="0.12"/><text x="65" y="778" font-size="10" font-weight="700" fill="#8250df" text-anchor="middle">U</text><text x="86" y="778" font-size="12" fill="#24292f">UNIQUE (унікальне)</text>
+<line x1="230" y1="708" x2="340" y2="708" stroke="#8c959f" stroke-width="1.5"/><line x1="238" y1="701" x2="238" y2="715" stroke="#8c959f" stroke-width="1.5"/><line x1="340" y1="701" x2="328" y2="708" stroke="#8c959f" stroke-width="1.5"/><line x1="340" y1="715" x2="328" y2="708" stroke="#8c959f" stroke-width="1.5"/>
+<text x="215" y="734" font-size="11" fill="#6e7781">1 : N (один до багатьох)</text></g>
+</svg>
