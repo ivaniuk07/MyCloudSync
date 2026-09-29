@@ -1,7 +1,5 @@
 # Діаграми MyCloudSync
 
-Діаграми вбудовані в Markdown, тому GitHub відображає їх без окремих програм чи розширень. Їхній текст можна редагувати прямо в цьому файлі.
-
 ## Варіанти використання
 
 ```mermaid
@@ -33,10 +31,10 @@ flowchart LR
 flowchart LR
     User[Користувач] --> UI[WinForms UI]
     subgraph App[MyCloudSync на Windows]
-        UI --> Core[Координатор синхронізації]
-        Watcher[FileSystemWatcher і контрольне сканування] --> Core
-        Core --> Adapter[Google Drive Adapter]
-        Core --> Repo[SQLite Repository]
+        UI --> Core[SyncCoordinator]
+        Watcher[FolderWatcher і контрольне сканування] --> Core
+        Core --> Adapter[GoogleDriveStorage]
+        Core --> Repo[SQLite-репозиторії]
     end
     Core --> Files[Локальні файли]
     Adapter --> Drive[Google Drive API v3]
@@ -49,7 +47,7 @@ flowchart LR
 sequenceDiagram
     actor User as Користувач
     participant UI as WinForms UI
-    participant Core as Координатор
+    participant Core as SyncCoordinator
     participant DB as SQLite
     participant Local as Локальна папка
     participant Drive as Google Drive API
@@ -76,63 +74,69 @@ sequenceDiagram
 
 ## Модель даних
 
+Спрощена ER-діаграма з ключовими полями. Повний опис усіх полів, типів, індексів і SQL-скрипт створення бази — у [docs/architecture/data-model.md](../architecture/data-model.md).
+
 ```mermaid
 erDiagram
-    ACCOUNT ||--o{ SYNC_PAIR : має
-    SYNC_PAIR ||--o{ EXCLUDE_RULE : налаштовує
-    SYNC_PAIR ||--o{ FILE_STATE : відстежує
-    FILE_STATE ||--o{ CONFLICT : фіксує
-    SYNC_PAIR ||--o{ SYNC_LOG : журналює
+    Account ||--o{ SyncPair : "має"
+    SyncPair ||--o{ FileState : "відстежує"
+    SyncPair ||--o{ ExcludeRule : "налаштовує"
+    SyncPair ||--o{ SyncLog : "журналює"
+    FileState ||--o{ SyncLog : "стосується"
+    FileState ||--o{ Conflict : "фіксує"
 
-    ACCOUNT {
-        int account_id PK
-        string email
-        blob token_ciphertext
+    Account {
+        int id PK
+        string email UK
+        string access_token "DPAPI"
+        string refresh_token "DPAPI"
         datetime token_expires_at
     }
-    SYNC_PAIR {
-        int pair_id PK
+    SyncPair {
+        int id PK
         int account_id FK
         string local_path
         string drive_folder_id
         string sync_mode
-        boolean enabled
+        bool is_active
+        string page_token
     }
-    EXCLUDE_RULE {
-        int rule_id PK
-        int pair_id FK
-        string pattern
-    }
-    FILE_STATE {
-        int file_state_id PK
-        int pair_id FK
+    FileState {
+        int id PK
+        int sync_pair_id FK
         string relative_path
-        string drive_file_id
-        string local_hash
-        datetime remote_modified_at
-        string sync_status
+        string drive_file_id UK
+        string local_hash "MD5"
+        string drive_md5
+        datetime drive_modified_at
+        string status
     }
-    CONFLICT {
-        int conflict_id PK
+    Conflict {
+        int id PK
         int file_state_id FK
+        string conflict_copy_name
         datetime detected_at
-        string local_copy_path
-        string remote_file_id
-        string resolution_status
+        bool is_resolved
     }
-    SYNC_LOG {
-        int log_id PK
-        int pair_id FK
-        datetime occurred_at
-        string relative_path
+    SyncLog {
+        int id PK
+        int sync_pair_id FK
+        int file_state_id FK "може бути NULL"
         string action
         string result
+        datetime created_at
     }
-    APP_SETTINGS {
-        int settings_id PK
-        int check_interval_minutes
-        boolean autostart
+    ExcludeRule {
+        int id PK
+        int sync_pair_id FK
+        string pattern
+        bool is_enabled
+    }
+    AppSettings {
+        int id PK "завжди 1"
+        int check_interval_sec
+        bool autostart
     }
 ```
 
-`APP_SETTINGS` — глобальні налаштування, тому в схемі вона не пов’язана з конкретною парою папок. OAuth токен потрібно захистити засобами Windows DPAPI.
+`AppSettings` — глобальні налаштування, тому в схемі вона не пов’язана з конкретною парою папок. OAuth-токени шифруються засобами Windows DPAPI.
