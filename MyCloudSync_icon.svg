@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+<title>MyCloudSync</title>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#3B82F6"/><stop offset="1" stop-color="#1D4ED8"/>
+  </linearGradient>
+  <linearGradient id="ar" gradientUnits="userSpaceOnUse" x1="92" y1="104" x2="164" y2="176">
+    <stop offset="0" stop-color="#2D68D8"/><stop offset="1" stop-color="#14B8A6"/>
+  </linearGradient>
+  <filter id="sh" x="-20%" y="-20%" width="140%" height="150%">
+    <feDropShadow dx="0" dy="6.0" stdDeviation="8.0" flood-color="#0B1B3A" flood-opacity="0.28"/>
+  </filter>
+</defs>
+<g transform="translate(0 0) scale(1.0)">
+<rect x="8" y="8" width="240" height="240" rx="56" fill="url(#bg)"/>
+<path d="M72 184 A40 40 0 0 1 64 105 A58 58 0 0 1 174 88 A46 46 0 0 1 188 184 Z" fill="#FFFFFF" filter="url(#sh)"/>
+<path d="M100.81 127.32 A30 30 0 0 1 143.00 114.02" fill="none" stroke="url(#ar)" stroke-width="11" stroke-linecap="round"/>
+<path d="M157.72 122.52 L149.25 103.19 L136.75 124.84 Z" fill="url(#ar)" stroke="url(#ar)" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M155.19 152.68 A30 30 0 0 1 113.00 165.98" fill="none" stroke="url(#ar)" stroke-width="11" stroke-linecap="round"/>
+<path d="M98.28 157.48 L106.75 176.81 L119.25 155.16 Z" fill="url(#ar)" stroke="url(#ar)" stroke-width="2.5" stroke-linejoin="round"/>
+</g>
+</svg>
