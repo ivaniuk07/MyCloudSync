@@ -1,5 +1,12 @@
 # MyCloudSync
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/images/logo/MyCloudSync_logo_dark.svg">
+    <img src="docs/images/logo/MyCloudSync_logo.svg" alt="Логотип MyCloudSync" width="700">
+  </picture>
+</p>
+
 **Посилання на репозиторій:** [https://github.com/ivaniuk07/MyCloudSync](https://github.com/ivaniuk07/MyCloudSync)
 
 ## Картка проєкту
