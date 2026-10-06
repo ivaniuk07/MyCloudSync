@@ -58,3 +58,15 @@
 - **Conflict** — зафіксовані конфлікти версій файлів.
 - **SyncLog** — журнал операцій синхронізації.
 - **AppSettings** — глобальні налаштування застосунку.
+
+## Структура проєкту
+
+Рішення `MyCloudSync.sln` (.NET 10) складається з чотирьох проєктів:
+
+- `src/MyCloudSync.App` — інтерфейс WinForms: вікна, іконка в треї, запуск застосунку;
+- `src/MyCloudSync.Core` — моделі, інтерфейси та логіка синхронізації;
+- `src/MyCloudSync.Infrastructure` — Google Drive API, файлова система, SQLite, засоби Windows;
+- `tests/MyCloudSync.Tests` — модульні тести.
+
+Детальний опис: [docs/project-structure.md](docs/project-structure.md).
+

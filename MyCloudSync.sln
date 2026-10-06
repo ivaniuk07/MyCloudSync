@@ -1,0 +1,50 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{872C63F4-2D24-41F8-B392-313AB2C438C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{673EF23E-9FA9-4970-991A-7F6D8049BD25}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyCloudSync.Core", "src\MyCloudSync.Core\MyCloudSync.Core.csproj", "{FD3F41D8-0E6B-4967-BF2E-CF6D71802F27}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyCloudSync.Infrastructure", "src\MyCloudSync.Infrastructure\MyCloudSync.Infrastructure.csproj", "{D4EE8A61-531B-4879-90F7-5C24939E86B5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyCloudSync.App", "src\MyCloudSync.App\MyCloudSync.App.csproj", "{A1AD5AC4-787A-4BDC-87D8-44B77F3BFF36}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyCloudSync.Tests", "tests\MyCloudSync.Tests\MyCloudSync.Tests.csproj", "{D093DED7-6DFB-45FE-AA9D-25500BCC98B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD3F41D8-0E6B-4967-BF2E-CF6D71802F27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD3F41D8-0E6B-4967-BF2E-CF6D71802F27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD3F41D8-0E6B-4967-BF2E-CF6D71802F27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD3F41D8-0E6B-4967-BF2E-CF6D71802F27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4EE8A61-531B-4879-90F7-5C24939E86B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4EE8A61-531B-4879-90F7-5C24939E86B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4EE8A61-531B-4879-90F7-5C24939E86B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4EE8A61-531B-4879-90F7-5C24939E86B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1AD5AC4-787A-4BDC-87D8-44B77F3BFF36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1AD5AC4-787A-4BDC-87D8-44B77F3BFF36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1AD5AC4-787A-4BDC-87D8-44B77F3BFF36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1AD5AC4-787A-4BDC-87D8-44B77F3BFF36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D093DED7-6DFB-45FE-AA9D-25500BCC98B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D093DED7-6DFB-45FE-AA9D-25500BCC98B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D093DED7-6DFB-45FE-AA9D-25500BCC98B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D093DED7-6DFB-45FE-AA9D-25500BCC98B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FD3F41D8-0E6B-4967-BF2E-CF6D71802F27} = {872C63F4-2D24-41F8-B392-313AB2C438C9}
+		{D4EE8A61-531B-4879-90F7-5C24939E86B5} = {872C63F4-2D24-41F8-B392-313AB2C438C9}
+		{A1AD5AC4-787A-4BDC-87D8-44B77F3BFF36} = {872C63F4-2D24-41F8-B392-313AB2C438C9}
+		{D093DED7-6DFB-45FE-AA9D-25500BCC98B9} = {673EF23E-9FA9-4970-991A-7F6D8049BD25}
+	EndGlobalSection
+EndGlobal
