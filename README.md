@@ -7,8 +7,6 @@
   </picture>
 </p>
 
-**Посилання на репозиторій:** [https://github.com/ivaniuk07/MyCloudSync](https://github.com/ivaniuk07/MyCloudSync)
-
 ## Картка проєкту
 
 ### Склад команди та відповідальність учасників
