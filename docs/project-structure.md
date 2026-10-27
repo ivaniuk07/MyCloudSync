@@ -87,6 +87,6 @@ MyCloudSync/
 
 Відкрити `MyCloudSync.sln` у Visual Studio 2022 або новішій (з компонентом «.NET desktop development»), зробити `MyCloudSync.App` стартовим проєктом і запустити (F5). Під час першого запуску створюється база `%LOCALAPPDATA%\MyCloudSync\mycloudsync.db`.
 
-Для входу через Google потрібен файл `client_secret.json` — OAuth-клієнт типу «Desktop app», створений у Google Cloud Console для проєкту з увімкненим Google Drive API. Файл кладеться в папку `src/MyCloudSync.App` і під час збирання копіюється поруч із програмою. У репозиторій він не потрапляє (`.gitignore`).
+Для входу через Google потрібен файл `client_secret.json` — OAuth-клієнт типу «Desktop app», створений у Google Cloud Console для проєкту з увімкненим Google Drive API. Файл лежить у папці `src/MyCloudSync.App` і під час збирання копіюється поруч із програмою.
 
 Тести: **Test → Run All Tests** або `dotnet test`. Тестам Google-акаунт не потрібен: замість Google Drive використовується сховище в пам'яті.
