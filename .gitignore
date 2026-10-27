@@ -27,3 +27,5 @@ desktop.ini
 
 
 *.log
+
+client_secret*.json

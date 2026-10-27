@@ -8,6 +8,7 @@ public interface ICloudStorage
     Task<IReadOnlyList<CloudFolder>> ListFoldersAsync(string parentId);
     Task<CloudFolder> CreateFolderAsync(string parentId, string name);
     Task<CloudFile> UploadAsync(string folderId, string relativePath, Stream content);
+    Task<CloudFile> UpdateAsync(string fileId, string relativePath, Stream content);
     Task DownloadAsync(string fileId, Stream destination);
     Task TrashAsync(string fileId);
 }

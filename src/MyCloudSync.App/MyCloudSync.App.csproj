@@ -20,4 +20,8 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="client_secret.json" Condition="Exists('client_secret.json')" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
 </Project>

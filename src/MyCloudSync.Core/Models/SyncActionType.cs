@@ -8,5 +8,6 @@ public enum SyncActionType
     DeleteLocal,
     DeleteRemote,
     Conflict,
-    UpdateState
+    UpdateState,
+    RemoveState
 }

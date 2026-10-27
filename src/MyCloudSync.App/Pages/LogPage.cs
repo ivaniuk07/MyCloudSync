@@ -1,26 +1,22 @@
+using MyCloudSync.App.Controls;
+using MyCloudSync.App.Forms;
 using MyCloudSync.Core.Abstractions;
 using MyCloudSync.Core.Models;
 
-namespace MyCloudSync.App.Forms;
+namespace MyCloudSync.App.Pages;
 
-public partial class LogForm : Form
+public partial class LogPage : UserControl
 {
     private readonly ISyncLogRepository _logRepository;
 
-    public LogForm(ISyncLogRepository logRepository)
+    public LogPage(ISyncLogRepository logRepository)
     {
         InitializeComponent();
         _logRepository = logRepository;
         cmbFilter.SelectedIndex = 0;
     }
 
-    protected override void OnLoad(EventArgs e)
-    {
-        base.OnLoad(e);
-        LoadEntries();
-    }
-
-    private void LoadEntries()
+    public void LoadEntries()
     {
         gridLog.Rows.Clear();
         var onlyErrors = cmbFilter.SelectedIndex == 1;
@@ -35,14 +31,36 @@ public partial class LogForm : Form
             var rowIndex = gridLog.Rows.Add(
                 entry.CreatedAt.ToLocalTime().ToString("dd.MM.yyyy HH:mm"),
                 entry.Message ?? "",
-                entry.Action,
+                GetActionText(entry.Action),
                 GetResultText(entry.Result));
 
+            var resultCell = gridLog.Rows[rowIndex].Cells[colResult.Index];
             if (entry.Result == LogResult.Error)
             {
-                gridLog.Rows[rowIndex].DefaultCellStyle.ForeColor = Color.Firebrick;
+                resultCell.Style.ForeColor = Theme.Red;
+                resultCell.Style.Font = new Font(gridLog.Font, FontStyle.Bold);
+            }
+            else if (entry.Result == LogResult.Warning)
+            {
+                resultCell.Style.ForeColor = Theme.Orange;
             }
         }
+    }
+
+    private static string GetActionText(string action)
+    {
+        return action switch
+        {
+            "Upload" => "Вивантаження",
+            "Download" => "Завантаження",
+            "Delete" => "Видалення",
+            "Rename" => "Перейменування",
+            "Conflict" => "Конфлікт",
+            "Skip" => "Пропущено",
+            "Error" => "Помилка",
+            "Info" => "Інформація",
+            _ => action
+        };
     }
 
     private static string GetResultText(LogResult result)
@@ -71,8 +89,7 @@ public partial class LogForm : Form
 
     private void btnClear_Click(object sender, EventArgs e)
     {
-        var answer = MessageBox.Show(this, "Очистити весь журнал?", "MyCloudSync", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-        if (answer == DialogResult.Yes)
+        if (MessageHelper.Confirm(this, "Очистити весь журнал?"))
         {
             _logRepository.Clear();
             LoadEntries();

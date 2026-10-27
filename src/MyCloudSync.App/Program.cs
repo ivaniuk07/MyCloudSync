@@ -1,5 +1,6 @@
 using Microsoft.Extensions.DependencyInjection;
 using MyCloudSync.App.Forms;
+using MyCloudSync.App.Pages;
 using MyCloudSync.Core.Abstractions;
 using MyCloudSync.Core.Sync;
 using MyCloudSync.Infrastructure.Data;
@@ -42,7 +43,8 @@ internal static class Program
 
         services.AddSingleton<ITokenProtector, DpapiTokenProtector>();
         services.AddSingleton<IAutostartService, AutostartService>();
-        services.AddSingleton<IAuthService, GoogleAuthService>();
+        services.AddSingleton<GoogleAuthService>();
+        services.AddSingleton<IAuthService>(provider => provider.GetRequiredService<GoogleAuthService>());
         services.AddSingleton<ICloudStorage, GoogleDriveStorage>();
 
         services.AddSingleton<HashCalculator>();
@@ -57,8 +59,9 @@ internal static class Program
         services.AddSingleton<SyncCoordinator>();
 
         services.AddSingleton<MainForm>();
-        services.AddTransient<SettingsForm>();
-        services.AddTransient<LogForm>();
+        services.AddSingleton<SyncPage>();
+        services.AddSingleton<LogPage>();
+        services.AddSingleton<SettingsPage>();
         services.AddTransient<DriveFolderPickerForm>();
     }
 }
